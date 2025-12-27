@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up</title>
+    <link rel="stylesheet" href="index2.css">
+   
+</head>
+<body>
+    <div class="pai">
+        <div class="filho">
+            <div class="login-container">
+    <div class="avatar" style="zoom:100%;">
+      <span>👤</span>
+    </div> 
+    <br>
+    <div class="logout">
+         <form class="login-box">
+       
+      <input type="text" placeholder="Name" id="name" name="nome">
+      <input type="email" placeholder="Email" id="email" name="email" required>
+      <input type="password" placeholder="Password" id="password" name="senha" required maxlength="6" minlength="8">
+      <input type="password" placeholder="Repeat id="password" again">
+ <div id="msg"></div>
+      <div class="options">
+       
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+     <div class="bt" style="display: flex; gap:3px; flex-direction:row;">
+         <button type="submit"><span><h3>Send</h3></span></button>
+      <br>
+      <button><span><h3>Go</h3></span></button>
+     </div>
+          <div class="fundo" style="display: flex; flex-direction: column; margin-left:130px; margin-top:20px; cursor: pointer;" onclick="back()"><span>Back</span></div>
+
+    </form>
+    </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./assets/auth.js"></script>
+<script src="./assets/index2.js"></script>
