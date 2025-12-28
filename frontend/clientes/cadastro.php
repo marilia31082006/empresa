@@ -11,12 +11,16 @@
 }
 
 body {
+   
     height: 100vh;
-    background: linear-gradient(120deg, #800909, #5a6b3a);
+    background: url("../imagens/cctv5.jpg") no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .container {
     width: 100%;
@@ -36,7 +40,7 @@ body {
 .avatar {
     width: 70px;
     height: 70px;
-    background: #1f2d16;
+    background: black;
     color: white;
     border-radius: 50%;
     margin: 0 auto 20px;
@@ -56,9 +60,9 @@ input {
 }
 
 button {
-    width: 100%;
+    width:200px;
     padding: 12px;
-    background: #1f2d16;
+    background: red;
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,7 +72,8 @@ button {
 }
 
 button:hover {
-    background: #2e3d23;
+    background:black;
+    color:red;
 }
 
     </style>

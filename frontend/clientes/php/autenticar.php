@@ -23,4 +23,12 @@ if ($result->num_rows === 1) {
     }
 }
 
-echo "<script>alert('Email ou senha inválidos'); window.location='../login.php';</script>";
+echo "<script>alert('Email ou senha inválidos'); window.location='../login.php';</script>";~
+
+if (password_verify($senha, $usuario['senha'])) {
+    $_SESSION['cliente_id'] = $usuario['id'];
+    $_SESSION['cliente_nome'] = $usuario['nome'];
+
+    header("Location: ../servicos.php");
+    exit;
+}

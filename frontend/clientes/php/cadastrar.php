@@ -12,7 +12,7 @@ $stmt->bind_param("sss", $nome, $email, $senha);
 if ($stmt->execute()) {
     echo "<script>alert('Cadastro realizado com sucesso!'); window.location='../login.php';</script>";
 } else {
-    echo "<script>alert('Erro: Email já cadastrado!'); window.location='../index.php';</script>";
+    echo "<script>alert('Erro: Email já cadastrado!'); window.location='../cadastro.php';</script>";
 }
 
 $stmt->close();

@@ -290,19 +290,18 @@
 </html>
 
 <script>
-    function clique(){
-    location.href="/frontend/admin/index.php"
+    function clique() {
+    location.href = "../admin/index.php";
 }
-function log(){
-        location.href="login.php"
 
-    }
-    function sug(){
-        location.href="index.php"
-    }
-    function clienteLogado() {
-    return localStorage.getItem('clienteLogado') === 'true';
+function log(){
+    location.href="login.php";
 }
+
+function sug(){
+    location.href="index.php";
+}
+
 
 // Bloqueia opções protegidas
 document.querySelectorAll('.protected').forEach(link => {

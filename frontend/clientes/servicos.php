@@ -2,10 +2,11 @@
 session_start();
 
 if (!isset($_SESSION['cliente_id'])) {
-    header("Location: login.php");
+    header("Location: apresentacao.php");
     exit;
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
