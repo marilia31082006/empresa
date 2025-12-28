@@ -1,4 +1,10 @@
-        *{
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprensentação</title>
+   <style>
+            *{
             margin:0;
             padding:0;
         }
@@ -91,6 +97,7 @@
             display: flex;
             flex-direction: row;
             width:100%;
+           
             align-items: center;
             justify-content: center;
         }
@@ -231,3 +238,85 @@
     color: #f93f03;
     border: 3px solid black;
 }
+   </style>
+    
+    
+</head>
+<body>
+<div class="pai">
+    <div class="topo">
+        <div class="imagem"><img src="../imagens/logo.png" class="img" onclick="clique()" style="cursor: pointer;"></div>
+        <br>
+        <div class="icone">
+           <!-- <div class="texto">
+            <span class="a" class="protected" onclick="clienteLogado()"><h2>Serviços</h2></span>
+            <span class="b" class="protected" onclick="clienteLogado()"><h2>Core Business</h2></span>
+            <span class="c" class="protected" onclick="clienteLogado()"><h2>Serviços Adicionais</h2></span>
+            <span class="d" class="protected" onclick="clienteLogado()"><h2>Contactos</h2></span>
+        </div> -->
+            <br>
+            <div class="icon">
+                <img src="../imagens/icone1.webp" class="icons">
+                <img src="../imagens/insta.webp" class="icons">
+                <img src="../imagens/whatsapp.webp" class="icons">
+                <img src="../imagens/twittericone.webp" class="icons">
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    <div class="centro">
+       <div class="textos"">
+        <span><h1 style="color: aliceblue;">SOLUÇÕES QUE GERAM RESULTADOS</h1></span><br>
+        <span><h1 style="color: blue;">&</h1></span><br>
+        <span><h1 style="color: #f93f03;">EXCELÊNCIA EM CADA SERVIÇO PRESTADO</h1></span>
+       </div>
+       <br>
+       <div class="h2"><span><h2>TEMOS TODO VÁRIOS TIPOS DE PRESTAÇÕES DE SERVIÇOS QUE VOÇÊ PRECISA</h2></span></div>
+    </div>
+    
+    <div class="buttonb">
+        <div class="esquerda"><button class="bnnt" onclick="log()"><span><h3>Login</h3></span></button></div>
+        <br>
+        <div class="direita"><button class="bnt" onclick="sug()"><span><h3>Create account</h3></span></button></div>
+    </div>
+
+    <!-- <br>
+    <div class="baixo"></div> -->
+</div>
+</body>
+</html>
+
+<script>
+    function clique(){
+    location.href="/frontend/admin/index.php"
+}
+function log(){
+        location.href="login.php"
+
+    }
+    function sug(){
+        location.href="index.php"
+    }
+    function clienteLogado() {
+    return localStorage.getItem('clienteLogado') === 'true';
+}
+
+// Bloqueia opções protegidas
+document.querySelectorAll('.protected').forEach(link => {
+    link.addEventListener('click', function (e) {
+
+        if (!clienteLogado()) {
+            e.preventDefault();
+
+            alert('Acesso restrito!\nCadastre-se ou loga-te para continuar.');
+
+            // opcional: redirecionar depois do alerta
+            // window.location.href = 'login.html';
+        }
+
+    });
+});
+</script>
