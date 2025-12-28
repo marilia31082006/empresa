@@ -43,3 +43,11 @@ const movementChart = new Chart(
         }
     }
 );
+
+function perfil(){
+    location.href="perfiladmin.html"
+}
+function back(){
+    location.href="./frontend/index.html"
+}
+

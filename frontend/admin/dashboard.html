@@ -37,7 +37,7 @@ if(localStorage.getItem('adminLogado') !== 'true') {
 
         <header class="topbar">
             <h1>Painel do Administrador</h1>
-            <div class="user">Administrador</div>
+            <div class="user" onclick="perfil()">Administrador</div>
         </header>
 
         <!-- DASHBOARD -->
@@ -101,9 +101,9 @@ if(localStorage.getItem('adminLogado') !== 'true') {
                         <th>Mensagem</th>
                     </tr>
                     <tr>
-                        <td>João</td>
-                        <td>joao@email.com</td>
-                        <td>Pedido de informação</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </table>
             </div>
@@ -113,7 +113,7 @@ if(localStorage.getItem('adminLogado') !== 'true') {
         <section id="movement" class="section">
             <div class="box">
                 <h2>Movimento da Página</h2>
-                <canvas id="movementChart"></canvas>
+                <canvas id="movementChart" ></canvas>
             </div>
         </section>
 
@@ -123,3 +123,9 @@ if(localStorage.getItem('adminLogado') !== 'true') {
 <script src="script.js"></script>
 </body>
 </html>
+<script>
+    onclick="ir()"
+    function ir(){
+        location.href="loginadmin.html"
+    }
+</script>

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definições admin</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+   <div class="settings-container">
+  <h2>⚙️ Configurações do Administrador</h2>
+
+  <!-- FOTO DE PERFIL -->
+  <div class="card">
+    <h3>Foto de Perfil</h3>
+       <img id="profilePreview" src="/imagens/perfil.webp" class="profile-img">
+    <input type="file" id="profilePhoto" accept="image/*">
+    <button onclick="alterarFoto()">Salvar Foto</button>
+  </div>
+
+  <!-- ALTERAR EMAIL -->
+  <div class="card">
+    <h3>Alterar E-mail</h3>
+    <input type="email" id="emailAtual" placeholder="E-mail atual">
+    <input type="email" id="novoEmail" placeholder="Novo e-mail">
+    <button onclick="alterarEmail()">Salvar E-mail</button>
+  </div>
+
+  <!-- ALTERAR SENHA -->
+  <div class="card">
+    <h3>Alterar Senha</h3>
+    <input type="password" id="senhaAtual" placeholder="Senha atual">
+    <input type="password" id="novaSenha" placeholder="Nova senha">
+    <input type="password" id="confirmarSenha" placeholder="Confirmar nova senha">
+    <button onclick="alterarSenha()">Salvar Senha</button>
+  </div>
+       <div class="fundo" style="display: flex; flex-direction: column; margin-left:130px; margin-top:20px; cursor: pointer;" onclick="back()"><span>Back</span></div>
+
+</div>
+ 
+</body>
+</html>
+<script src="admin.js"></script>
+<script>
+  function back(){
+location.href="dashboard.html"
+  }
+</script>

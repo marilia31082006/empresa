@@ -19,8 +19,9 @@
        
       <input type="text" placeholder="Name" id="name" name="nome">
       <input type="email" placeholder="Email" id="email" name="email" required>
-      <input type="password" placeholder="Password" id="password" name="senha" required maxlength="6" minlength="8">
-      <input type="password" placeholder="Repeat id="password" again">
+      <input type="password" placeholder="Password" id="password" name="senha" required maxlength="12" minlength="8">
+      <input type="password" placeholder="Repeat" id="password2" required>
+
  <div id="msg"></div>
       <div class="options">
        
@@ -30,10 +31,11 @@
         <a href="#">Forgot Password?</a>
       </div>
 
-     <div class="bt" style="display: flex; gap:3px; flex-direction:row;">
-         <button type="submit"><span><h3>Send</h3></span></button>
-      <br>
-      <button><span><h3>Go</h3></span></button>
+     <div class="bt" style="display: flex; gap:3px; flex-direction:row; margin-left:50px;">
+       <button type="button" onclick="cadastrarCliente(event)">
+  <h3>Send</h3>
+</button>
+
      </div>
           <div class="fundo" style="display: flex; flex-direction: column; margin-left:130px; margin-top:20px; cursor: pointer;" onclick="back()"><span>Back</span></div>
 
@@ -44,5 +46,6 @@
 </body>
 </html>
 
-<script src="./assets/auth.js"></script>
+<script src="assets/cliente.js"></script>
+
 <script src="./assets/index2.js"></script>
